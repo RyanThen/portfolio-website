@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<title>R|T</title>
+	<link rel="shortcut icon" type="image/png" href="/assets/xd/RT-Logo-Secondary.png">
 
 	<!--Stylesheets-->
         <!--fonts-->
@@ -82,7 +83,7 @@
                     <div class="about-desc text-center col-12 col-md-6">
                         <p class="about-text">Hi I'm Ryan, earthling from Chicago.  In addition to dwelling on Earth, I'm a developer and a designer. I read fiction and people watch often. I love travel and speak Martian fluently.</p>
                         
-                        <p class="about-text">While things don't always look so peachy here on Earth, I choose to focus on the great things that are happening.  I believe in the power of positivity and the magic of keeping the right mindset.  I truly believe anything is possible as long as you don't give up and learn to fail better with each attempt.</p>
+                        <p class="about-text">While things don't always look so peachy here on Earth, I choose to focus on the great things that are happening.  I believe in the power of positivity and the magic of keeping the right mindset.  I truly believe anything is possible as long as you don't give up and learn to fail better with each attempt until you succeed.</p>
                     </div>
                 </div>
             </div>
@@ -172,21 +173,21 @@
             
           <!--Form-->
             <div class="form-wrap">
-                <form id="contactForm">
+                <form id="contactForm" action="contact_form.php" method="post">
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <input type="text" class="form-control" id="inputPassword4" placeholder="Name">
+                      <input name="name" type="text" class="form-control" id="inputPassword4" placeholder="Name">
                     </div>
                     <div class="form-group col-md-6">
-                      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                      <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email">
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <input type="text" class="form-control" id="inputCountry" placeholder="Country">
+                      <input name="country" type="text" class="form-control" id="inputCountry" placeholder="Country">
                     </div>
                     <div class="form-group col-md-6">
-                      <select id="inputProjectType" class="form-control">
+                      <select name="project_type" id="inputProjectType" class="form-control">
                         <option selected>Project Type...</option>
                         <option>Website</option>
                         <option>Application</option>
@@ -197,10 +198,10 @@
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-12">
-                      <textarea type="text" class="form-control" id="inputMessage" placeholder="Message" rows="5"></textarea>
+                      <textarea name="message" type="text" class="form-control" id="inputMessage" placeholder="Message" rows="5"></textarea>
                     </div>
                   </div>
-                  <button type="submit" class="contact-btn btn btn-primary">Send!</button>
+                  <button name="submit" type="submit" class="contact-btn btn btn-primary">Send!</button>
                 </form>
             </div>
             
