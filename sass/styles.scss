@@ -91,9 +91,9 @@
 .design-element {
     .animation-wrapper { height: 400px;
         .flying-saucer-container { width: 100%; height: 100%;
-            .flying-saucer { width: 275px; margin-top: 190px; margin-bottom: -30px; position: absolute; left: -320px;
-                @media(min-width: $breakpoint-desktop) { width: 315px; left: -350px; }
-                @media(max-width: $breakpoint-phone) { width: 250px;  margin-top: 180px; margin-bottom: 0; left: -300px; }
+            .flying-saucer { width: 255px; margin-top: 190px; margin-bottom: -30px; position: absolute; left: -320px;
+                @media(min-width: $breakpoint-desktop) { width: 295px; left: -350px; }
+                @media(max-width: $breakpoint-phone) { width: 230px;  margin-top: 180px; margin-bottom: 0; left: -300px; }
             }
         }
         @media(max-width: $breakpoint-phone) { height: 380px; }
@@ -193,8 +193,8 @@
             }
         } 
     }
-    .footer-logo-container { width: 100%; margin: 25px 0 15px 0; 
-        .footer-logo { width: 55px; }
+    .footer-logo-container { width: 100%; margin: 25px 0 40px 0; 
+        .footer-logo { width: 50px; }
     }
     .footer-design-container {
         .footer-wave { width: 100%; }
