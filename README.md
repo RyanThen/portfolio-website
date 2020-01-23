@@ -1,2 +1,2 @@
 # portfolio-website
-A repo of my martian themed web dev portfolio website
+A repo of my space themed web dev portfolio website
