@@ -99,4 +99,10 @@ input[type="submit"]:hover, .reset-quiz-btn:hover {
     .correct-counter {
         display: none;
     }
+    div.test {
+        font-size: 22px !important;
+    }
+    .test-question {
+        font-size: 24px !important;
+    }
 }
