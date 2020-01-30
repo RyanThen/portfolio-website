@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'global';
+
 // Load Fonts
 //@font-face {
 //  font-family: 'Open Sans';
@@ -112,7 +115,9 @@
             .card-img-overlay { transition: 0.5s ease-in-out;
                 .card-innards {margin: auto;
                     .card-title { font-size: 24px; color: $white; transition: 0.5s ease-in-out; }
-                    .card-text { font-size: 18px; color: $white; margin-bottom: 150px; transition: 0.5s ease-in-out; }
+                    .card-text { font-size: 18px; color: $white; margin-bottom: 150px; transition: 0.5s ease-in-out; 
+                        @media(min-width: 768px) and (max-width: 991px) { margin-bottom: 30px; }
+                    }
                     .project-btn { color: $white; border: 2px solid $white; padding: 8px 16px; border-radius: 5px; text-decoration: none; transition: 0.5s ease-in-out;
                         &:hover { transition: $transition; }
                     }
@@ -168,7 +173,7 @@
 
 
 .footer { margin-top: 100px; position: relative;
-    > .container { border-top: 1px solid lightgray;
+    .footer-wrap { border-top: 1px solid lightgray;
         .footer-row-top { padding: 35px 0 0 0;
             .copyright-wrap { 
                 .copyright { margin-bottom: 0; }
@@ -194,7 +199,7 @@
         } 
     }
     .footer-logo-container { width: 100%; margin: 25px 0 40px 0; 
-        .footer-logo { width: 50px; }
+        .footer-logo { width: 40px; }
     }
     .footer-design-container {
         .footer-wave { width: 100%; }
