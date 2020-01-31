@@ -13,6 +13,11 @@
   margin: 8px auto 70px auto;
 }
 
+.max-width {
+  max-width: 1700px !important;
+  margin: 0 auto;
+}
+
 .headline-group .headline {
   font-family: "Open Sans", serif;
   font-size: 36px;
@@ -28,10 +33,16 @@
   margin: 8px auto 70px auto;
 }
 
+.max-width {
+  max-width: 1700px !important;
+  margin: 0 auto;
+}
+
 .site-wrap {
   position: relative;
   font-family: "Open Sans", sans-serif;
   overflow: hidden;
+  width: 100%;
 }
 
 .header-wrap {
@@ -159,13 +170,13 @@
 .home .home-headlines .intro-headlines .intro {
   opacity: 0;
   font-size: 65px;
-  padding: 15px;
-  margin-top: 30px;
+  margin-top: 25px;
+  margin-bottom: 15px;
   font-family: "Great Vibes", "Open Sans", sans-serif;
 }
 @media (max-width: 575px) {
   .home .home-headlines .intro-headlines .intro {
-    padding: 0;
+    padding: 5px;
   }
 }
 .home .home-headlines .intro-headlines .intro-titles {
@@ -175,7 +186,7 @@
 }
 @media (max-width: 575px) {
   .home .home-headlines .intro-headlines .intro-titles {
-    padding: 9px 5px;
+    padding: 10px 5px;
   }
 }
 .home .home-headlines .intro-headlines .cta-container {
