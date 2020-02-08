@@ -106,7 +106,7 @@ var correctCounterElement = document.getElementById('correct_counter');
 var testElement = document.getElementById('test');
 var applicationContainerElement = document.getElementById('application_container');
 
-function myFunction(x) {
+function responsiveQuiz(x) {
     if (x.matches) { // If media query matches
         testContainerElement.style.width = "90%";
         correctCounterElement.style.display = "none";
@@ -118,5 +118,5 @@ function myFunction(x) {
 }
 
 var x = window.matchMedia("(max-width: 500px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+responsiveQuiz(x) // Call listener function at run time
+x.addListener(responsiveQuiz) // Attach listener function on state changes
