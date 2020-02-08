@@ -111,6 +111,7 @@ function myFunction(x) {
         testContainerElement.style.width = "90%";
         correctCounterElement.style.display = "none";
         testElement.style.fontSize = "21px";
+        testElement.style.paddingLeft = "0px";
     } else {
         applicationContainerElement.style.marginTop = "35px";
     }
