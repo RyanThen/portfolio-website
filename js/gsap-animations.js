@@ -1,13 +1,33 @@
 // Home Text Animations Timeline
 const homeTextTl = new TimelineLite();
 
-homeTextTl.to([".intro"], 1, { y: 50, opacity: 1, ease: Back.easeOut });
+homeTextTl.to([".intro"], 1, { y: 50, opacity: 1, ease: Back.easeOut, delay: 0.35 });
 homeTextTl.to([".intro-titles"], 1.25, { y: 40, opacity: 1, ease: Power1.easeOut }, "=-0.5");
 homeTextTl.to([".cta-container"], 1.5, { y: 30, opacity: 1, ease: Power1.easeOut }, "=-0.75");
 
 
-//CONTROLLER CREATED
+// CONTROLLER CREATED
 const controller = new ScrollMagic.Controller();
+
+
+//// Home Text Animations Timeline
+//const homeTextTl = new TimelineLite();
+//
+//homeTextTl.add(
+//    TweenLite.to(".intro", 1, { y: 50, opacity: 1, ease: Back.easeOut, delay: 0.5 })
+//    ).add(
+//    TweenLite.to(".intro-titles", 1.25, { y: 40, opacity: 1, ease: Power1.easeOut })
+//    ).add(
+//    TweenLite.to(".cta-container", 1.5, { y: 30, opacity: 1, ease: Power1.easeOut } )
+//)
+//
+//const sceneHta = new ScrollMagic.Scene({
+//    triggerElement: "#home",
+//    triggerHook: 0.1
+//})
+//.setTween(homeTextTl)
+//.addIndicators()
+//.addTo(controller);
 
 
 // TIMELINE -- Home Text disappear on scroll
@@ -81,6 +101,37 @@ const sceneAboutAn = new ScrollMagic.Scene({
 .addTo(controller);
 
 
+// TIMELINE -- Flying Saucer Animation
+const flyingSaucer = document.getElementsByClassName("flying-saucer");
+const animationWrapper = document.getElementById("animation_wrapper");
+const saucerAn = new TimelineLite();
+
+    // Media Query -- Responsive
+var x = window.matchMedia("(max-width: 800px)")
+mobileSaucerAnimation(x) // Call listener function at run time
+x.addListener(mobileSaucerAnimation) // Attach listener function on state changes
+
+function mobileSaucerAnimation(x) {
+    if (x.matches) { // If media query matches
+        animationWrapper.setAttribute("style", "margin-bottom: -200px");
+    } else {
+        animationWrapper.setAttribute("style", "margin-bottom: 0px");
+    }
+}
+
+    // Animation Data
+saucerAn.to(flyingSaucer, 2, {x: "900%" });
+
+const sceneSaucerAn = new ScrollMagic.Scene({
+    triggerElement: animationWrapper,
+    duration: "100%",
+    triggerHook: 0.15
+})
+//.setPin(animationWrapper)
+.setTween(saucerAn)
+.addTo(controller);
+
+
 // TIMELINE -- Project Animations
 const projectAn = new TimelineLite();
 
@@ -108,20 +159,4 @@ const sceneTestimonialAn = new ScrollMagic.Scene({
     triggerHook: 1
 })
 .setTween(testimonialAn)
-.addTo(controller);
-
-
-// TIMELINE -- Flying Saucer Animation
-const flyingSaucer = document.getElementsByClassName("flying-saucer");
-const flyingSaucerContainer = document.getElementsByClassName("flying-saucer-container");
-const saucerAn = new TimelineLite();
-
-saucerAn.to(flyingSaucer, 2, {x: "925%" });
-
-const sceneSaucerAn = new ScrollMagic.Scene({
-    triggerElement: ".flying-saucer-container",
-    duration: "200%",
-    triggerHook: 0.4
-})
-.setTween(saucerAn)
 .addTo(controller);
