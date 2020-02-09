@@ -240,7 +240,7 @@
 }
 
 .design-element .animation-wrapper {
-  height: 400px;
+  height: 450px;
 }
 .design-element .animation-wrapper .flying-saucer-container {
   width: 100%;
@@ -253,6 +253,11 @@
   position: absolute;
   left: -320px;
 }
+@media (min-width: 1600px) {
+  .design-element .animation-wrapper .flying-saucer-container .flying-saucer {
+    margin-top: 280px;
+  }
+}
 @media (min-width: 1350px) {
   .design-element .animation-wrapper .flying-saucer-container .flying-saucer {
     width: 295px;
@@ -263,13 +268,17 @@
   .design-element .animation-wrapper .flying-saucer-container .flying-saucer {
     width: 230px;
     margin-top: 180px;
-    margin-bottom: 0;
     left: -300px;
+  }
+}
+@media (min-width: 1600px) {
+  .design-element .animation-wrapper {
+    height: 575px;
   }
 }
 @media (max-width: 575px) {
   .design-element .animation-wrapper {
-    height: 380px;
+    height: 550px;
   }
 }
 
