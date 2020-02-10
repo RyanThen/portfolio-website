@@ -16,16 +16,16 @@ var correctCounter;
 
 //Array of Questions - Choices - Answers
 var questions = [
-    ['Which popular junk food was invented in Chicago?', 'Twinkie', 'Cheese Puffs', 'Moon Pie', 'Pork Rinds', 'A'],
-    ['What is the name of Chicago\'s tallest building?', 'Sears Tower', 'John Hancock', 'Trump Tower', 'Willis Tower', 'D'],
-    ['What is the famous mile stretch down Lake Shore Drive called?', 'Marvelous Mile', 'Magnificent Mile', 'Miraculous Mile', 'Lake Shore Mile', 'B'],
-    ['How many miles of public beach does Chicago lay claim to?', '2', '5', '8', '26', 'D'],
-    ['What is Chicago\'s public rail transit called?', 'L', 'R', 'Subway', 'Underground Railway', 'A'],
-    ['Chicago is home to one of the world\'s last free zoos. What is its name?', 'Brookfield Zoo', 'Bronx Zoo', 'Lincoln Park Zoo', 'Chicago Zoo', 'C'],
-    ['The Chicago Field Museum owns the world\'s most complete T-rex skeleton. What is its name?', 'Stan', 'AMNH 5027', 'Sue', 'Jane', 'C'],
-    ['Allegedly the Chicago fire began when a cow knocked over a latern. What was the name of the owner of the cow?', 'Mr. Greene', 'Ms. O\'Leary', 'Ms. O\'Brien', 'Mr. Atcus', 'B'],
-    ['How many parks does Chicago have?', '352', '452', '552', '652', 'C'],
-    ['Which famous person was born in Chicago?', 'Walt Disney', 'Jim Brown', 'Alan Greenspan', 'Dick Van Dyke', 'A']
+    ['Who won the 2014 Super Bowl?', 'New England Patriots', 'Denver Broncos', 'Seattle Seahawks', 'Philidelphia Eagles', 'C'],
+    ['Which baseball player is responsible for The Curse of the Bambino?', 'Shoeless Joe Jackson', 'Ty Cobb', 'Reggie Jackson', 'Babe Ruth', 'D'],
+    ['Who is said to have invented baseball in Cooperstown, New York, in 1839?', 'Abner Doubleday', 'Bill Buckner', 'Ronald Johnston', 'Harold Banks', 'A'],
+    ['Which basketball team has the most NBA championships in history?', 'LA Lakers', 'Chicago Bulls', 'Boston Celtics', 'San Antonio Spurs', 'C'],
+    ['Who is the NBA Coach of the Year trophy named after?', 'Red Auerbach', 'John Wooden', 'Phil Jackson', 'Bear Bryant', 'A'],
+    ['Who has the most PGA major wins in history?', 'Sam Snead', 'Tiger Woods', 'Jack Nicklaus', 'Arnold Palmer', 'C'],
+    ['Which MLB player hit 20 or more homeruns in 20 seasons?', 'Hank Aaron', 'Babe Ruth', 'Mickey Mantle', 'Barry Bonds', 'A'],
+    ['Who is the only basketball player to win championships in high school, college and the NBA and also to win an Olympic Gold Medal?', 'Larry Bird', 'Michael Jordon', 'Magic Johnson', 'Isiah Thomas', 'C'],
+    ['Which MLB player is known as the Iron Man, playing in 2,632 consecutive games?', 'Peyton Manning', 'Cal Ripken Jr.', 'Hank Aaron', 'Dave Erickson', 'B'],
+    ['What pitcher has lost the most games in MLB history?', 'Phil Niekro', 'Cy Young', 'Nolan Ryan', 'Walter Johnson', 'B']
 ];
 
 //Render Questions
