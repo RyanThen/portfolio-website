@@ -379,17 +379,17 @@
   -o-transition: 300ms ease-in;
   transition: 300ms ease-in;
 }
-.projects .project-card-row .project-card .card-img-overlay .card-innards .proj-1:hover {
+.projects .project-card-row .project-card .card-img-overlay .card-innards .proj-accent:hover {
   background-color: #f282ad;
   color: #FFFFFF;
   border-color: #f282ad;
 }
-.projects .project-card-row .project-card .card-img-overlay .card-innards .proj-2:hover {
+.projects .project-card-row .project-card .card-img-overlay .card-innards .proj-primary-2:hover {
   background-color: #e2b321;
   color: #FFFFFF;
   border-color: #e2b321;
 }
-.projects .project-card-row .project-card .card-img-overlay .card-innards .proj-3:hover {
+.projects .project-card-row .project-card .card-img-overlay .card-innards .proj-primary:hover {
   background-color: #c3e1d6;
   color: #FFFFFF;
   border-color: #c3e1d6;

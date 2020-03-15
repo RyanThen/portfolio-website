@@ -108,13 +108,13 @@
                     .project-btn { color: $white; border: 2px solid $white; padding: 8px 16px; border-radius: 5px; text-decoration: none; transition: 0.5s ease-in-out;
                         &:hover { transition: $transition; }
                     }
-                    .proj-1 { 
+                    .proj-accent { 
                         &:hover { background-color: lighten($accent, 4%); color: $white; border-color: lighten($accent, 4%); }
                     }
-                    .proj-2 { 
+                    .proj-primary-2 { 
                         &:hover { background-color: lighten($primary-2, 2%); color: $white; border-color: lighten($primary-2, 2%); }
                     }
-                    .proj-3 { 
+                    .proj-primary { 
                         &:hover { background-color: darken($primary, 2%); color: $white; border-color: darken($primary, 2%); }
                     }
                 }
