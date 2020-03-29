@@ -1,10 +1,10 @@
 # Space Themed Portfolio Website
 
 ## About
-This repository is where I house the code I used to create my space themed portfolio website currently hosted at https://ryanthen.com/.
+This repository is where I house the code I used for my space themed portfolio website currently hosted at https://ryanthen.com/.
 
 ## Overview
-Technologies utilized in this project: HTML, CSS, JavaScript, PHP, Bootstrap, GSAP, Scroll Magic, Sass, jQuery, Google Fonts, Adobe XD (for graphics)
+Technologies utilized in this project: HTML5, CSS3, JavaScript, PHP, Bootstrap 4, GSAP, Scroll Magic, Sass, jQuery, Google Fonts, Adobe XD (for graphics)
 
 ## Build Features and Description
 - UNLICENCE (open source)
