@@ -286,7 +286,7 @@
 .projects .project-card-row .project-card {
   margin-top: 9px;
   padding: 0;
-  border: 0;
+  border: 2px solid #00303f;
   border-radius: 0;
 }
 
@@ -335,6 +335,7 @@
 .projects .project-card-row .project-card .card-img-overlay .card-innards .card-title {
   font-size: 24px;
   color: #EDEAE5;
+  opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -343,6 +344,7 @@
   font-size: 18px;
   color: #EDEAE5;
   margin-bottom: 150px;
+  opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -359,6 +361,7 @@
   padding: 8px 16px;
   border-radius: 5px;
   text-decoration: none;
+  opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -388,12 +391,14 @@
 
 .projects .project-card-row .project-card .card-img-overlay:hover .card-title {
   color: #00303F;
+  opacity: 1;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
 .projects .project-card-row .project-card .card-img-overlay:hover .card-text {
   margin-bottom: 45px;
+  opacity: 1;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   color: #00303F;
@@ -401,6 +406,7 @@
 
 .projects .project-card-row .project-card .card-img-overlay:hover .project-btn {
   color: #00303F;
+  opacity: 1;
   border-color: #00303F;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
