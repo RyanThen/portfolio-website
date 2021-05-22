@@ -1,0 +1,85 @@
+/* Header */
+.sell-header-bg { height: 255px; width: 100%; background-size: cover; }
+.sell-header-txt-wrap { display: flex; justify-content: center;	align-items: center; flex-direction: column; height: 100%; }
+.sell-header-txt { color: white; }
+.sell-header-txt p { font-size: 18px; line-height: 25px; margin: 10px !important; width: 95%; max-width: 800px; }
+.sell-header-cta a { display: inline-block; font-size: 16px; text-decoration: none; color: #424242; background-color: white; padding: 15px 40px; border-radius: 5px; }
+/*.sell-header-cta a:hover { background-color: dimgrey; color: white; }*/
+
+/* .arrow-down img { width: 35px; margin-top: 20px; animation: animateArrowDown 2s ease-in-out infinite; } */
+/*@keyframes animateArrowDown {*/
+    /*0% { transform: translateY(0); opacity: 0; }*/
+    /*20% { opacity: 1; }*/
+    /*90% { opacity: 1; }*/
+    /*100% { transform: translateY(20px); opacity: 0.4; }*/
+/*}*/
+
+/* Icon Blocks */
+.intro-icons-container { margin-bottom: 35px; padding-bottom: 35px; border-bottom: solid 1px lightgrey; }
+.intro-title { margin: 30px 0 25px 0; text-align: center; }
+.intro-title h3 { font-size: 21px; color: #0a246a; }
+
+.intro-icons-wrap { display: flex; justify-content: space-between; }
+.icon-block-wrap { cursor: pointer; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.icon-block-graphic { width: 100px; }
+.icon-block-content { font-size: 16px; max-width: 225px; }
+.icon-block-content-more { display: none; height: 100%; font-size: 16px; padding-top: 10px; text-align: left; }
+.vert-line { height: 25px; width: 2px; background-color: #339FCF; display: block; margin: 0 auto 10px auto; }
+.icon-block-content-more-text { padding: 10px; border: 1px solid #339FCF; border-radius: 3px; }
+
+/* Tab Section */
+.active-tab { color: darkorange; border-bottom: 2px solid darkorange !important; transition: all 350ms; }
+			
+.tab-container { margin-bottom: 25px; }
+.tab-title-wrap { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.tab { text-align: center; }
+.tab h2 { cursor: pointer; padding: 5px 15px; margin-bottom: 0; border-bottom: 2px solid transparent; transition: all 350ms; font-size: 24px; }
+
+.tab-content-container { position: relative; width: 100%; }
+.tab-content-wrap { position: relative; display: none; width: 100%; min-height: 300px; background-color: #F5F5F5; padding: 20px; box-sizing: border-box; }
+
+.d-block { display: block !important; }
+
+.trailing-wysi { margin: 25px 0; }
+
+@media(min-width: 601px){
+    .sell-header-cta a:not(:first-child) { margin-left: 15px; }
+    .intro-icons-wrap { align-items: flex-start; }
+    .icon-block-wrap { width: 225px; }
+    .icon-block-content-more { width: 225px; }
+}
+
+@media(max-width: 950px){
+    .intro-icons-wrap { display: grid; grid-template-columns: 1fr 1fr; justify-items: center;}
+    .icon-block-wrap { margin: 30px; }
+}
+
+@media(max-width: 600px) {
+    .sell-header-bg { height: 350px; }
+    .sell-header-cta { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .sell-header-cta a:not(:first-child) { margin-left: 0; margin-top: 15px; }
+    
+    .intro-icons-wrap { display: flex; flex-direction: column; align-items: center; grid-template-columns: initial; }
+    .icon-block-wrap { margin: 10px 20px 30px 20px; }
+    .icon-block-wrap { width: 300px; }
+    .icon-block-content-more { width: 300px; }
+
+    /* Sticky Nav on Mobile */
+    .tab-title-wrap { position: sticky; top: 0; z-index: 999; background-color: white; box-shadow: 0px 12px 20px -20px grey; }
+    .tab-title-wrap .tab { padding: 8px; }
+    .tab-title-wrap .tab h2 { font-size: 20px; word-break: normal !important; word-wrap: normal; }
+    /* Horizontal Scroll on Mobile */
+    .scroll { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; -ms-overflow-style: -ms-autohiding-scrollbar; }
+    /*.scroll::-webkit-scrollbar { display: none; }*/
+}
+
+/* Horizontal Tab Spacing on Mobile */
+@media(max-width: 430px){
+    .tab-title-wrap .tab h2 { padding: 5px 25px; }
+}
+@media(max-width: 380px){
+    .tab-title-wrap .tab h2 { padding: 5px 20px; }
+}
+@media(max-width: 330px){
+    .tab-title-wrap .tab h2 { padding: 5px 15px; }
+}

@@ -1,0 +1,40 @@
+/* Global Styles */
+h3 { font-size: 20px; }
+p { font-size: 16px; }
+
+.template__gift-card-disclaimer { margin-bottom: 50px; }
+.page-content-container { max-width: 1140px; margin: 0 auto; }
+
+@media(max-width: 1140px){
+    .page-content-container { padding: 0 10px; }
+}
+
+/* Template Styles */
+.page-headline { margin: 40px 0; text-align: center; }
+.page-headline h3 { font-size: 26px; color: #243065; line-height: 26px; }
+
+.instructions { display: grid; grid-template-columns: 1fr 20px 1fr 20px 1fr; grid-gap: 20px; }
+.instructions__step-container--img { width: 100%; }
+.instructions__step-container--headline { margin-top: 10px; }
+.instructions__step-container--text { margin-top: 10px; }
+.instructions__vertical-line { display: flex; align-self: center; height: 80px; width: 2px; background-color: lightgrey; opacity: 0.75; margin: 0 10px; }
+.instructions__vertical-line:nth-child(6n), .instructions__vertical-line:last-of-type { display: none; }
+
+.wysiwyg-container { font-size: 16px; text-align: left; }
+
+.participating-merchants__container { background-color: #e7e7e7; border-top: 2px solid darkgrey; border-bottom: 2px solid darkgrey; }
+.merchants__category-headline { font-size: 18px; text-align: left; margin-bottom: 20px; }
+.participating-merchants__container .merchants__category-headline:not(:first-of-type) { margin-top: 30px; }
+.merchants__image-container { display: grid; grid-template-columns: repeat(7, 1fr); grid-gap: 10px; justify-content: center; align-items: center; width: 100%; box-sizing: border-box; }
+.merchants__image-container--img { width: 100%; }
+
+.btn-container { margin: 45px 0; padding: 15px 0; text-align: center; }
+.btn {  font-size: 16px; font-weight: 500; color: white !important; background-color: #f58121; padding: 12px; border-radius: 5px; text-decoration: none; text-transform: uppercase; }
+.btn:hover { background-color: #ffa63b !important; color: white !important; }
+
+@media(max-width: 600px) {
+    .instructions { grid-template-columns: 1fr; }
+    .instructions__vertical-line { display: none; }
+
+    .merchants__image-container { grid-template-columns: repeat(3, 1fr); }
+}
