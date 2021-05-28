@@ -45,7 +45,7 @@
                 @media(min-width: $breakpoint-desktop-lrg){ margin-bottom: 40px; font-size: 70px }
                 @media(max-width: $breakpoint-phone){ padding: 5px; }
             }
-            .intro-titles { opacity: 0; display: inline-block; padding: 35px 5px; font-family: didot, serif; font-size: 32px;
+            .intro-titles { opacity: 0; display: inline-block; padding: 35px 5px; font-family: Georgia, serif; font-size: 32px;
                 @media(min-width: $breakpoint-desktop-lrg){ text-align: center !important; font-size: 30px; }
                 @media(max-width: $breakpoint-phone){ padding: 10px 5px }
             }
@@ -64,9 +64,9 @@
 
 
 .projects {
-    .project-card-row { justify-content: space-between;
-        .project-card { margin-top: 9px; padding: 0; border: 0; border-radius: 0;
-            @media(min-width: 768px) { flex-basis: 32.75%; }
+    .project-card-row {
+        .project-card { padding: 0; border: none; border-radius: 0;
+            @media(max-width: 767px) { margin-top: 10px; }
             &:hover {
                 .card-img { opacity: 0; transition: 0.5s ease-in-out; }
                 .project-overlay { opacity: 0; transition: 0.5s ease-in-out; }
@@ -75,11 +75,11 @@
             .card-img { border-radius: 0; transition: 0.5s ease-in-out; }
             .card-img-overlay { transition: 0.5s ease-in-out;
                 .card-innards {margin: auto;
-                    .card-title { font-size: 24px; color: $secondary-3; transition: 0.5s ease-in-out; }
-                    .card-text { font-size: 18px; color: $secondary-3; margin-bottom: 150px; transition: 0.5s ease-in-out; 
+                    .card-title { font-size: 24px; color: $secondary-3; opacity: 0; transition: 0.5s ease-in-out; }
+                    .card-text { font-size: 18px; color: $secondary-3; margin-bottom: 150px; opacity: 0; transition: 0.5s ease-in-out; 
                         @media(min-width: 768px) and (max-width: 991px) { margin-bottom: 30px; }
                     }
-                    .project-btn { color: $secondary-3; border: 2px solid $secondary-3; padding: 8px 16px; border-radius: 5px; text-decoration: none; transition: 0.5s ease-in-out;
+                    .project-btn { color: $secondary-3; border: 2px solid $secondary-3; padding: 8px 16px; border-radius: 50px; text-decoration: none; opacity: 0; transition: 0.5s ease-in-out;
                         &:hover { transition: $transition; }
                     }
                     .proj-accent { 
@@ -93,9 +93,9 @@
                     }
                 }
                 &:hover { 
-                    .card-title { color: $secondary; transition: 0.5s ease-in-out; }
-                    .card-text { margin-bottom: 45px; transition: 0.5s ease-in-out; color: $secondary; }
-                    .project-btn { color: $secondary; border-color: $secondary; transition: 0.5s ease-in-out; } 
+                    .card-title { color: $secondary; opacity: 1; transition: 0.5s ease-in-out; }
+                    .card-text { margin-bottom: 45px; opacity: 1; transition: 0.5s ease-in-out; color: $secondary; }
+                    .project-btn { color: $secondary; opacity: 1; border-color: $secondary; transition: 0.5s ease-in-out; } 
                 }
             }
         }
@@ -152,7 +152,7 @@
 .contact {
     .form-wrap { width: 60%; margin: auto;
         input.form-control, select.form-control, textarea.form-control { border-color: $secondary; }
-        .contact-btn { background-color: transparent; border-color: $secondary; color: $secondary; transition: $transition; padding-left: 15px; padding-right: 15px;
+        .contact-btn { padding: 8px 25px; background-color: transparent; border-color: $secondary; border-radius: 50px; color: $secondary; transition: $transition;
             &:hover { color: $white; background-color: $accent; border-color: $accent; transition: $transition }
         }
         @media(max-width: $breakpoint-phone){ width: 90% }
