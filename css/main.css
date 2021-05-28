@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .headline-group .headline {
   font-family: 'Open Sans', serif;
   font-size: 36px;
@@ -213,7 +214,7 @@
   opacity: 0;
   display: inline-block;
   padding: 35px 5px;
-  font-family: didot, serif;
+  font-family: Georgia, serif;
   font-size: 32px;
 }
 
@@ -277,23 +278,15 @@
   }
 }
 
-.projects .project-card-row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .projects .project-card-row .project-card {
-  margin-top: 9px;
   padding: 0;
-  border: 2px solid #00303f;
+  border: none;
   border-radius: 0;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .projects .project-card-row .project-card {
-    -ms-flex-preferred-size: 32.75%;
-        flex-basis: 32.75%;
+    margin-top: 10px;
   }
 }
 
@@ -359,7 +352,7 @@
   color: #EDEAE5;
   border: 2px solid #EDEAE5;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 50px;
   text-decoration: none;
   opacity: 0;
   -webkit-transition: 0.5s ease-in-out;
@@ -536,8 +529,7 @@
   color: #00303F;
   -webkit-transition: 300ms ease-in;
   transition: 300ms ease-in;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 8px ​25px;
 }
 
 .contact .form-wrap .contact-btn:hover {
